@@ -1,0 +1,554 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/main.css" rel="stylesheet" />
+    <link href="Scripts/javascript.fullPage.css" rel="stylesheet" />
+    <title>AlTarbyah AlIslamyah</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//fast.eager.io/nVaLUtFx85.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="content/component.css" />
+    <link href="Scripts/slick.css" rel="stylesheet" />
+    <link href="Scripts/slick-theme.css" rel="stylesheet" />
+    <script src="scripts/modernizr.custom.js"></script>
+
+    <script src="Scripts/greensock/TweenMax.min.js"></script>
+    <script src="Scripts/jquery.preload.js"></script>
+    <script src="Scripts/tis.js"></script>
+    <script src="Scripts/slick.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+</head>
+<body style="background-color:#9ea2a6;background-image:url('images/pattern_new.png')">
+
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1" style="font-size: 1.5vmin;">
+        <h3 style="font-size:16pt;">قائمة</h3>
+        <button id="closeLeft" style="background-color:rgba(0,0,0,0.5);border:none; float:left; margin-left:15px; font-size:14pt; margin-top:-75px;font-family:Arial; padding:5px; color:white; width:50px; height:50px;"><span class="glyphicon glyphicon-remove"></span></button>
+        <a href="#" onclick="toggleHideSub();">الصفحة الرئيسية</a>
+        
+        <a href="#" onclick="openNav(1);">المراحل التعليمية</a>
+        <a href="#" onclick="openNav(7);">استكشف برامجنا</a>    
+        <a href="#" onclick="openNav(2);">الأنشطة اللامنهجية</a>    
+        
+        <a href="#" onclick="openNav(4);">القبول والتسجيل</a>
+        <a href="#" onclick="openNav(3);">حول مدارسنا</a>
+
+        <a href="#" onclick="openNav(5);">التوظيف</a>
+        <a href="#" onclick="openNav(6);">اتصل بنا</a>
+    </nav>
+
+    <div id="fullpage">
+        <div class="section" id="section0" style="background-color:#9ea2a6;background-image:url('images/pattern_new.png')">
+            <div style="position:absolute; width:100%; min-height:100%; height:100%; background: url('/images/TIS-web-main-image.png') no-repeat bottom center; background-size: cover;">
+               
+                
+
+            </div>
+            <div style="width:100%; min-height:200px; height:200px;position:absolute;bottom:13%; margin:0 auto; " class="hidden-xs">
+                <div style="width:16%; float:left;min-height:200px; height:200px;"></div>
+                <div style="width:18%; float:left; margin-right:1%; min-height:200px; height:200px; ">
+                    <div style="background:#4d4948; text-align:center">
+                        <img src="images/vtour.png" style="border:none" />
+                    </div>
+                    
+                    <div style="width:100%; min-height:100px; height:100px;background:rgba(255,255,255,0.83); display:block; margin-top:10px">
+                        <a href="#" onclick="openNav(10);">
+                        <div style="padding:10px; padding-top:20px;">
+                            <span style="float:right;padding:5px; width: 30%;  padding-left:10px; padding-right:10px; color:white; background:#434649">آخر الأحداث</span>   
+                            <div style="float:right;width: 70%; min-height:70px"></div>                                                    
+                        </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div style="width:28%; float:left; margin-right:1%;  min-height:200px; height:200px;" class="brown">
+                    
+                    <div style="padding:10px; margin-top:10px;">
+                        <span style="padding:5px; padding-left:10px; padding-right:10px; color:white; background:#434649">استكشف برامجنا</span>
+                        <!--<span style="margin-right:5px; color:#fff;" class="glyphicon glyphicon-chevron-left"></span><span style="margin-right:5px;color:#fff">اقرأ المزيد</span>-->
+                    </div>
+                    
+                    <a href="#" onclick="openNav(7);">
+                        <div style="width:50%; float:left; height:110px; direction:ltr; padding-left:15px; padding-top:25px;">
+
+                            <div class="slider single-item" style="width:100%; display:block; text-align:center">
+                                <div><img src="images/aed.png" class="img-responsive" /></div>
+                                <div><img src="images/nctt.png" class="img-responsive" /></div>
+                            </div>
+                        </div>
+                    </a>
+                    <div style="width:50%; float:left; height:110px; color:white">
+                        <p style="margin:15px; margin-top:15px; margin-right:20px; font-size:1.4vw">اكتشف برنامج التربية الإسلامية المتقدم</p>
+                    </div>
+
+                    <script>
+                            $('.single-item').slick(
+                                {
+                                    autoplay: true,
+                                    slidesToShow: 1,
+                                    adaptiveHeight: true,
+                                    arrows: false
+                                });
+                    </script>
+                </div>
+                <div style="width:20%; float:left; margin-right:1%; min-height:200px; height:200px;background:rgba(255,255,255,0.83)">
+                    <div style="padding:10px; margin-top:10px;">
+                        <span style="padding:5px; padding-left:10px; padding-right:10px; color:white; background:#434649">آخر الأخبار</span>
+                        <span style="cursor:pointer;margin-right:1px; color:#9a9da0; float:left" class="glyphicon glyphicon-chevron-left" id="newsLeft"></span>
+                        <span style="cursor:pointer;color:#9a9da0; float:left" class="glyphicon glyphicon-chevron-right" id="newsRight"></span>
+                    </div>
+                    <div class="slider news-item" style="width:100%; display:block;">
+                        <!--NEWS ENTRY 1-->
+                        <div style="height:145px; padding:15px; padding-right:20px; overflow-y:hidden">
+                            <p style="font-size:8pt">Oct. 20, 2015</p>
+                            <p>تتقدم مدارسنا بأسمى آيات العرفان لخادم الحرمين...</p>
+
+                            <span>
+                                اقرأ المزيد
+                                <span style="margin-right:5px;" class="glyphicon glyphicon-chevron-left"></span>
+                            </span>
+                        </div>
+
+                        <!--NEWS ENTRY 2-->
+                        <div style="height:145px; padding:15px; padding-right:20px; overflow-y:hidden">
+                            <p style="font-size:8pt">Oct. 21, 2015</p>
+                            <p>تتقدم مدارسنا بأسمى آيات العرفان لخادم الحرمين...</p>
+
+                            <span>
+                                اقرأ المزيد
+                                <span style="margin-right:5px;" class="glyphicon glyphicon-chevron-left"></span>
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <script>
+                                $('.news-item').slick(
+                                {
+                                    rtl: true,
+                                    autoplay: false,
+                                    slidesToShow: 1,
+                                    arrows: false
+                                });
+
+                                $('#newsRight').click(function () {
+                                    $(".news-item").slick('slickPrev');
+                                });
+
+                                $('#newsLeft').click(function () {
+                                    $(".news-item").slick('slickNext');
+                                });
+                    </script>
+                </div>
+
+                <div style="width:16%; float:right;min-height:200px; height:200px;"></div>
+            </div>
+            <div style="width:100%; min-height:50%; height:50%;position:absolute;" class="gradientFill">
+            </div>
+                 
+            <div style="position:absolute; width:100%; min-height:50px; bottom:5%; height:50px; text-align:center; margin-top:0px;">
+                <div class="" style="padding:5px; height:20px">
+                    <p style="margin:0px; color:white; font-size:12pt;">المزيد</p>
+                    <img src="images/arow-down.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section1">
+            <div style="min-height:100%; height:100%; background-color:#9ea2a6;background-image:url('images/pattern_new.png')" class="row">
+                <div class="col-md-6 gradientFill" style="min-height:100%; height:100%; background:url('images/s2.png') no-repeat center center; background-size:cover; padding:0px;">
+                    <div class="hidden-lg hidden-sm hidden-md" style="width:100%; min-height:100%; height:100%; position:absolute">
+                        <div style="padding-right:33px; padding-left:150px; padding-top:80px">
+                            <h3 style="color:white; font-size:14pt; font-weight:100">الرؤية</h3>
+                            <p style="color:#fff; margin-top:25px; font-size:10pt">إن رؤية مدارس التربية الإسلامية هي المشاركة الفعالة في تطوير الأجيال الناشئة ليصبحوا ناجحين ومبدعين ، ويسهموا بدورٍ إيجابيّ في نمو الوطن واستقراره ونهضة مجتمعه.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" style="min-height:100%; height:100%; padding:0px; "></div>                
+               
+                <div style="width:100%; min-height:35%; bottom:10%; position:absolute" class="hidden-xs">
+                    <div style="width:75%; min-height:100%; height:100%; ">
+                        <!--<div style="min-height:100%; height:100%; width:20%; background:url('images/s3.png') no-repeat center center; background-size:cover; float:right"></div>-->
+                        
+                        <div style="padding-right:120px; padding-left:30px; width:57%; margin-bottom:30px;">
+                            <h3 style="color:white;">الرؤية</h3>
+                            <p style="color:#fff; margin-top:25px;">إن رؤية مدارس التربية الإسلامية هي المشاركة الفعالة في تطوير الأجيال الناشئة ليصبحوا ناجحين ومبدعين ، ويسهموا بدورٍ إيجابيّ في نمو الوطن واستقراره ونهضة مجتمعه.</p>
+                        </div>
+                        <div style="min-height:100%; height:100%; width:60%; float:right;background-color:rgba(0,0,0,0.1); padding-right:90px; ">
+                            <div style="padding:30px; padding-top:10px;">
+                                <h3 style="color:#fff; font-weight:100;">الرسالة</h3>
+                                <p style="color:#fff; margin-top:15px;">
+                                    تحرص مدارس التربية الإسلامية على تزويد الطلاب و الطالبات بمهارات الحياة وفنونها التي يحتاجونها ليصبحوا متحفزين ذاتياً للتعلم مدى الحياة ، وليصبحوا مواطنين قادرين على الإسهام بإيجابيةٍ في هذا العالم المتغيّر ، مع تمسكهم بقيم المجتمع
+                                </p>
+                                <p style="color:#fff; margin-top:25px;margin-bottom:25px">
+                                    وتهدف المدارس إلى تأمين فرصٍ تعليمية متنوعة تدعو الطلاب والطالبات إلى التحدي ، وذلك في جوٍّ تعليمي غني ، يلهم ويغذي التطور لدى كل المتعلمين ، مع التركيز على تمكينهم من التفكير والتحليل من خلال دمج مهارات التفكير المنوعة في المناهج التعليمية.
+                                </p>
+                            </div>
+                        </div>
+                        <!--<div style="min-height:100px; height:100px; width:60%; float:right;background-color:#fff; padding-right:130px; ">
+                            <img src="images/advanced_accredited.png" style="width:100px;" />
+                        </div>-->
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="section2" class="section">
+            <div class="row" style="min-height:100%; height:100%;background-color:#9ea2a6;background-image:url('images/pattern_new.png')">
+                <div class="col-md-6 col-xs-12" style="min-height:100%; height:100%; ">
+                    <div style="min-height:13%; height:13%; width:100%"></div>
+                    <div style="min-height:87%; height:87%; width:100%; float:left; margin-top:100px">
+
+                        <div style="background:rgba(0,0,0,0.1); padding:20px;" class="hidden-xs">
+                            <h3 style="color:white;">المراحل التعليمية</h3>
+                            <p style="color:#fff; margin-top:15px;">
+                                ويتكون من دور واحد . وهو مجهز بمعمل للحاسب الآلي والاقتصاد المنزلي، مكتبة أطفال ، صالة تلفاز ، حديقـــة ألعــاب مجهــزة بمظلـــة ورشاشات ماء لحماية الأطفال من الحر ، حظيرة حيوانات، حديقة رمل محمية للحفاظ على سلامة الأطفال .كما تم فرش أرضية القسم بمادة من المطاط لحماية الأطفال من السقوط .
+                            </p>
+                            <p style="color:#fff; margin-top:25px;">
+                                مسـاحة كل فصـل في جميع المراحل (56) متراً مربعـاً خصـص منهـا لكل طالبـة بشكل وسطي 2,8 متراً مربعاً مما يحقق لكل طالبة سهولة الحركة والتنقل ويثري المناخ التعليمـي ويبعـث على الشـعـور بالراحـة . جهزت الفصول بجهاز حاسب آلي وجهاز عرض وشاشة .
+                            </p>
+                            <p style="color:#fff; margin-top:25px;">
+                                يحتوي كل مبنـى على نظام إنذار للحريق وخمسـة مخارج للطوارئ في كل دور.
+                            </p>
+                        </div>
+
+                        <div style="padding:20px; font-size:10pt; margin-top:-120px" class="hidden-md hidden-lg hidden-sm">
+                            <h3 style="color:white; font-size:14pt; font-weight:100">المراحل التعليمية</h3>
+                            <p style="color:#fff; margin-top:15px;">
+                                ويتكون من دور واحد . وهو مجهز بمعمل للحاسب الآلي والاقتصاد المنزلي، مكتبة أطفال ، صالة تلفاز ، حديقـــة ألعــاب مجهــزة بمظلـــة ورشاشات ماء لحماية الأطفال من الحر ، حظيرة حيوانات، حديقة رمل محمية للحفاظ على سلامة الأطفال .كما تم فرش أرضية القسم بمادة من المطاط لحماية الأطفال من السقوط .
+                            </p>
+                            <p style="color:#fff; margin-top:25px;">
+                                مسـاحة كل فصـل في جميع المراحل (56) متراً مربعـاً خصـص منهـا لكل طالبـة بشكل وسطي 2,8 متراً مربعاً مما يحقق لكل طالبة سهولة الحركة والتنقل ويثري المناخ التعليمـي ويبعـث على الشـعـور بالراحـة . جهزت الفصول بجهاز حاسب آلي وجهاز عرض وشاشة .
+                            </p>
+                           
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-6 hidden-xs" style="min-height:100%; height:100%;">
+                    
+                    <div style="width:100%; min-height:100%; height:100%;">
+                        <div style="min-height:100%; height:100%; width:100%; background:url('images/s6.png') no-repeat center center; background-size:cover; float:right;"></div>
+                    </div>
+                </div>
+              
+                <div style="width:98%; min-height:30%; height:30%; bottom:5%; position:absolute;">
+                    <div style="width:45%; min-height:100%; height:100%; float:left">
+                       <img src="images/blocks.png" style="margin-top:20px;"  />
+                    </div>
+                </div>
+                <!--<div style="width:101%; min-height:100%; height:100%; background:url('images/subfooter.png') no-repeat left bottom; background-size:contain; position:absolute; float:left">
+                    <h3><span style="font-size:12pt; position:absolute; bottom:30px; width:100%; text-align:left; padding-left:30px; color:#d3ad67">www.tischools.edu.sa</span></h3>
+                </div>-->
+               
+            </div>
+            
+        </div>
+
+        <div id="section3" class="section">
+            <div class="row hidden-xs" style="min-height:100%; height:100%;background-color:#9ea2a6;">
+                <div class="col-md-6 hidden-xs" style="min-height:100%; height:100%; background:url('images/pattern_new.png');">
+                    <div style="width:100%; min-height:100%; height:100%; position:absolute; background:url('images/ex1.png') center center no-repeat; background-size:cover"></div>
+                </div>
+                <div class="col-md-6 hidden-xs" style="min-height:100%; height:100%; background-color:#9ea2a6; background-image:url('images/pattern_new.png')">
+
+                    <div style="min-height:20%; height:20%; width:100%"></div>
+                    <div style="min-height:50%; height:50%; width:100%; float:left">
+                        <div style="background:rgba(0,0,0,0.1); padding:20px; margin-top:100px; padding-right:50px; padding-left:90px">
+                           
+                                <h3 style="color:#fff; font-weight:100; ">الأنشطة اللامنهجية</h3>
+                                <p style="color:#fff; margin-top:15px;">
+                                    (نادي الكتاب - نادي الدراما - نادي التصميم - نادي التصوير الفوتوغرافي - نادي الصحافة - نادي الأمم المتحدة - مجلس الطالبات ) ، و نظراً للنجاح الكبير الذي حققته الأندية في المرحلتين المتوسطة و الثانوية تم تطبيقها على المرحلة الابتدائية العليا في عام 1428 هـ . حيث تم افتتاح الأندية التالية
+                                </p>
+                                <p style="color:#fff; margin-top:15px;">
+                                    نادي الكتاب <br /> نادي الدراما <br /> نادي التصوير الفوتوغرافي <br /> نادي الصحافة <br /> مجلس الطالبات
+                                </p>
+                           
+                        </div>
+                    </div>
+                    <div style="min-height:25%; height:25%; width:100%"></div>
+                    
+                </div>
+
+                <div class="hidden-xs" style="width:98%; min-height:30%; bottom:0%; position:absolute; overflow:hidden ">
+                    
+                    <div style="width:57%; min-height:100%; height:100%; float:right;  margin-right:70px;">
+                        <img src="images/act.png" class="img-responsive" style="float:left" />
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="row hidden-lg hidden-md hidden-sm" style="min-height:100%; height:100%;background-color:#9ea2a6;">
+                <div style="padding:30px;" class="col-xs-12">
+                    <h3 style="color:#fff; font-weight:100; font-size:12pt; margin-top:70px ">الأنشطة اللامنهجية</h3>
+                    <p style="color:#fff; margin-top:15px; font-size:10pt">
+                        (نادي الكتاب - نادي الدراما - نادي التصميم - نادي التصوير الفوتوغرافي - نادي الصحافة - نادي الأمم المتحدة - مجلس الطالبات ) ، و نظراً للنجاح الكبير الذي حققته الأندية في المرحلتين المتوسطة و الثانوية تم تطبيقها على المرحلة الابتدائية العليا في عام 1428 هـ . حيث تم افتتاح الأندية التالية
+                    </p>
+                    <p style="color:#fff; margin-top:15px;font-size:10pt">
+                        نادي الكتاب <br /> نادي الدراما <br /> نادي التصوير الفوتوغرافي <br /> نادي الصحافة <br /> مجلس الطالبات
+                    </p>
+                    <img src="images/act.png"  style="float:left; margin-left:-30px; margin-top:-30px; height:220px" />
+                </div>
+            </div>
+        </div>
+
+        <div id="section4" class="section" style="background-color:#9ea2a6;background-image:url('images/pattern_new.png')">
+            <div class="row hidden-xs" style="min-height:100%; height:100%;background-color:#000; background-image:url('images/pattern_new.png');padding:0px; margin:0px">
+
+                <div class="col-md-12" style="min-height:80%; height:80%; position:absolute; margin:0px; overflow:hidden; padding:0px; ">                    
+                    <style type="text/css">
+                        .easyhtml5video .eh5v_script {
+                            display: none;
+                        }
+                    </style>
+                    <div class="easyhtml5video" style="max-width:100%; padding:0px; margin-top:-50px; opacity:0.6">
+                        <video autoplay="autoplay" poster="eh5v.files/html5video/Sequence_01_1.jpg" style="width:100%" title="" loop="loop" onended="var v=this;setTimeout(function(){v.play()},100)">
+                            <source src="eh5v.files/html5video/Sequence_01_1.m4v" type="video/mp4" />
+                            <source src="eh5v.files/html5video/Sequence_01_1.webm" type="video/webm" />
+                            <source src="eh5v.files/html5video/Sequence_01_1.ogv" type="video/ogg" />
+                            <source src="eh5v.files/html5video/Sequence_01_1.mp4" />
+                            <object type="application/x-shockwave-flash" data="eh5v.files/html5video/flashfox.swf" width="100%" height="480" style="position:relative;">
+                                <param name="movie" value="eh5v.files/html5video/flashfox.swf" />
+                                <param name="allowFullScreen" value="true" />
+                                <param name="flashVars" value="autoplay=true&amp;controls=false&amp;fullScreenEnabled=false&amp;posterOnEnd=true&amp;loop=true&amp;poster=eh5v.files/html5video/Sequence_01_1.jpg&amp;src=Sequence_01_1.m4v" />
+                                <embed src="eh5v.files/html5video/flashfox.swf" width="854" height="480" style="position:relative;" flashVars="autoplay=true&amp;controls=false&amp;fullScreenEnabled=false&amp;posterOnEnd=true&amp;loop=true&amp;poster=eh5v.files/html5video/Sequence_01_1.jpg&amp;src=Sequence_01_1.m4v" allowFullScreen="true" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_en" />
+                                <img alt="Sequence 01_1" src="eh5v.files/html5video/Sequence_01_1.jpg" style="position:absolute;left:0;" width="100%" title="Video playback is not supported by your browser" />
+                            </object>
+                        </video><div class="eh5v_script"><a href="http://easyhtml5video.com">video in html5</a> by EasyHtml5Video.com v3.5</div>
+                    </div>
+                    <script src="eh5v.files/html5video/html5ext.js" type="text/javascript"></script>
+                    <!-- End EasyHtml5Video.com BODY section -->
+                </div>
+                
+                <!--<div style="width:101%; min-height:400px; height:400px; z-index:99999; position:absolute" class="gradientDiagonal">
+                </div>-->
+
+                <div class="hidden-xs" style="position:absolute; bottom:50px; width:101%; min-height:10%; height:180px;background-color:#2a353e;background-image:url('images/pattern_new_dark.png'); z-index:99999">
+                    <div class="row">
+
+                        <div class="col-md-6 pull-right" style="min-height:20%; height:20%; ">
+                            <div style="margin:30px; height:400px; margin-top:15px; padding-right:20px; float:right;" class="hidden-xs">
+                                <img src="images/footerlogo.png" />
+                            </div>
+                            <div style="margin:15px; height:400px; float:right; color:#dedede; font-size:10pt;  ">
+                                <h3 style="margin-top:10px; font-size: 2.0vmin; color:#dedede; margin-bottom:15px; font-weight:100">اتصل بنا</h3>
+
+                                شركة مدارس التربية الإسلامية المحدودة<br />
+                                ص ب 2757 الرياض 11461<br /><br />
+                                تلفون : 4883818<br />
+                                فاكس : 4883820<br />
+
+                            </div>
+
+                            <div style="margin:15px; height:400px; float:right; color:#dedede; font-size:12pt;" class="hidden-xs-down">
+                                <h3 style="margin-top:10px; font-size: 2.0vmin; color:#dedede; margin-bottom:15px; font-weight:100">البرامج</h3>
+
+                                American Diploma<br />
+                                Asaleeb<br />
+                                Awael
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6" style="min-height:20%; height:20%; padding:0px; padding-left:20px;  ">
+                            <div style="margin:5px; color:white; width:100%; height:170px;" id="mappy">                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden-xs" style="position:absolute; bottom:0%; width:101%; min-height:50px; height:50px;background-color:rgba(0,0,0,0.9);background-image:url('images/pattern_new_dark.png');z-index:99999; font-size:9pt; color:#dedede">
+                    <p style="float:left; margin-left:30px; margin-top:15px;">مدارس التربية الإسلامية . حقوق النشر 2014 @ مدارس التربية الإسلامية . المملكة العربية السعودية</p>
+                </div>
+
+                <div style="position:fixed; width:100%; height:250px; z-index:9999" class="hidden-xs navGradient"></div>
+            </div>
+            
+            
+
+            <div class="row hidden-lg hidden-sm hidden-md" style="min-height:35%; height:35%;background:url('') no-repeat center center; background-size:cover">
+                <!--<div style="width:101%; min-height:100px; height:100px; z-index:99999; position:absolute" class="gradientDiagonal">
+                </div>-->
+
+            </div>
+
+            <div class="row hidden-lg hidden-sm hidden-md" style="min-height:65%; height:65%;background-color:#2a353e;background-image:url('images/pattern_new_dark.png')">
+                <div class="col-xs-12 pull-right" style="min-height:65%; height:65%; ">
+                   
+                    <div style="margin:30px; color:#dedede; font-size:8pt;  ">
+                        <h3 style="margin-top:10px; font-size: 12pt; font-weight:100; color:#dedede; margin-bottom:15px; font-weight:100">اتصل بنا</h3>
+
+                        شركة مدارس التربية الإسلامية المحدودة<br />
+                        ص ب 2757 الرياض 11461<br /><br />
+                        تلفون : 4883818<br />
+                        فاكس : 4883820<br />
+
+                    </div>
+
+                   
+                    <!--<br style="clear:both" />
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14498.920798608406!2d46.644315362304724!3d24.70179973792436!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x176d15563db94af2!2sAl+Tarbyah+Al+Islamyah+Schools!5e0!3m2!1sen!2ssa!4v1441455625722" style="border-right:1px solid gainsboro; min-height:100%; height:300px" width="101%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+
+                    <div style="color:white; width:100%; height:170px;" id="mappy2">
+                    </div>
+                </div>
+
+               
+
+            </div>
+
+            
+        </div>
+    </div>
+   
+    <!--SUB FRAME-->    
+    <div class="scroll-wrapper" id="subframe" style="position:fixed; top:0; width:100%; min-height:100%; height:100%; z-index:40; display:none; right:-50%; background-color:rgba(0,0,0,0.8);">
+        <iframe id="mailFrame" width="100%" height="100%" style="border:none;" src="blank.htm"></iframe>        
+        <div style="background-color:rgba(0,0,0,0.6); background-image:url('images/pattern_new.png'); position:fixed; width:100%; top:0; height:110px;" class="hidden-lg hidden-md hidden-sm"></div>
+    </div>    
+
+    <!--OTHERS-->
+    <div style="position:fixed; z-index:98; top:0">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-1 pull-right"></div>
+                <div class="col-md-11 pull-right">
+                     <img src="images/logo.png" style="margin-top:31px; margin-right:50px;" class="img-responsive hidden-xs" />
+                     <img src="images/logo.png" style="margin-top:31px; margin-right:0px; width:60%; float:right" class="img-responsive hidden-sm hidden-md hidden-lg"/>
+                    <!--<img src="images/logo.png" style="margin-top:31px; margin-right:10px; width:70%; float:right" class="img-responsive hidden-xs hidden-md hidden-lg" />-->
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="navi" class="" style="width:100%; height:50px; position:fixed; top:15px; z-index:99">
+        <div class="container-fluid" style="padding:0px">
+            <div class="row" style="padding:0px; margin:0px">                
+                <div class="col-md-6 col-lg-6" style="padding:0px; margin-top:30px; height:50px; text-align:left; margin-left:0px">
+                    <div class="hidden-sm hidden-xs">
+                        <img src="images/btnFb.png" style="width:18px; margin-top:5px" />
+                        <img src="images/btnTwitter.png" style="width:30px;margin-top:5px" />
+                        <img src="images/btnYoutube.png" style="width:30px;margin-top:5px" />
+                        <img src="images/btnInstagram.png" style="width:33px;margin-top:5px" />
+                        <img src="images/btnSupport.png" style="width:32px;margin-top:5px" />
+                        <img src="images/btnEmail.png" style="width:31px;margin-top:5px" />
+                        <img src="images/btnClassera.png" style="width:90px;margin-top:5px; margin-left:20px;" />
+
+                        <button id="showLeft" style="border:none;float:left; text-align:center; background:rgba(0,0,0,0.5); height:70px; width:100px; color:White; padding-top:0px; margin-top:-12px; font-size:14pt; padding-left:10px;" class="hidden-xs">
+                            <p style="margin-top:15px">قائمة</p>
+                        </button>
+                        <button id="showSub" onclick="toggleHideSub();" style="display:none; border:none;float:left; text-align:center; background:rgba(218,158,36,0.8); height:70px; width:100px; color:White; padding-top:0px; margin-top:-12px; font-size:14pt; padding-left:10px; margin-left:1px;">
+                            <p style="margin-top:7px">رجوع</p>
+                        </button>
+                    </div>
+                    <a id="showLeft2" href="#"><img src="images/ico_nav.png" style="width:30px; margin-left:20px; margin-top:-5px" class="hidden-lg hidden-md" /></a>
+                    
+                </div>
+            </div>
+            <!--<div class="row" style="padding:0px; margin:0px">
+                <div class="col-md-7 col-lg-7" style="padding:0px; margin:0px; margin-top:-15px">
+                    <div style="background:rgba(0,0,0,0.5); height:46px; color:White; padding-top:12px; padding-left:20px; padding-right:15px;text-align:left; overflow:hidden; width:644px; float:left; font-size:10pt">
+                        <span style=""><a href="#" style="color:white; text-decoration:none">حول مدارسنا</a></span>
+                        <span style="padding-right:20px"><a style="color:white; text-decoration:none">المراحل التعليمية</a></span>
+                        <span style="padding-right:20px"><a style="color:white; text-decoration:none">الأنشطة اللامنهجية</a></span>
+                        <span style="padding-right:20px"><a style="color:white; text-decoration:none">القبول والتسجيل</a></span>
+                        <span style="padding-right:20px"><a style="color:white; text-decoration:none">التوظيف</a></span>
+                        <span style="padding-right:20px"><a style="color:white; text-decoration:none">اتصل بنا</a></span>
+                    </div>
+                    
+                </div>
+            </div>-->
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="scripts/javascript.fullPage.js"></script>
+    <script type="text/javascript">
+	fullpage.initialize('#fullpage', {
+	    anchors: ['home', 'about', 'schools', 'extraactivities', 'contactus'],
+		menu: '#menu', navigationPosition: 'Right',
+		navigationTooltips: ['home', 'about','schools','extraactivities','contactus'],
+		css3:true
+	});
+
+    </script>
+
+    <script src="scripts/classie.js"></script>
+    <script>
+        var menuLeft = document.getElementById('cbp-spmenu-s1'),
+            showLeft = document.getElementById('showLeft'),
+				body = document.body;
+
+			showLeft.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );				
+			};
+			showLeft2.onclick = function () {
+			    classie.toggle(this, 'active');
+			    classie.toggle(menuLeft, 'cbp-spmenu-open');
+			};
+			closeLeft.onclick = function () {
+			    classie.toggle(this, 'active');
+			    classie.toggle(menuLeft, 'cbp-spmenu-open');
+			};
+
+			window.onload = function () {
+			    var styles = [
+                              {
+                                  "stylers": [
+                                    { "hue": "#11ff00" },
+                                    { "saturation": 1 },
+                                    { "lightness": -1 }
+                                  ]
+                              }, {
+                              }
+			    ];
+			    var myLatLng = { lat: 24.710338, lng: 46.661482 };
+
+			    
+
+			    var options = {
+			        mapTypeControlOptions: {
+			            mapTypeIds: ['Styled']
+			        },
+			        center: new google.maps.LatLng(24.710338, 46.661482),
+			        zoom: 16,
+			        disableDefaultUI: true,
+			        mapTypeId: 'Styled'
+			    };
+			    var div = document.getElementById('mappy'); var div2 = document.getElementById('mappy2');
+			    var map = new google.maps.Map(div, options);
+			    var map2 = new google.maps.Map(div2, options);
+			    var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
+			    map.mapTypes.set('Styled', styledMapType);
+			    var styledMapType2 = new google.maps.StyledMapType(styles, { name: 'Styled' });
+			    map2.mapTypes.set('Styled', styledMapType);
+			    var marker = new google.maps.Marker({
+			        position: myLatLng,
+			        map: map,
+			        title: 'Al Tarbyah Al Islamyah'
+			    });
+
+			    var marker2 = new google.maps.Marker({
+			        position: myLatLng,
+			        map: map2,
+			        title: 'Al Tarbyah Al Islamyah'
+			    });
+			};
+    </script>
+</body>
+
+
+</html>

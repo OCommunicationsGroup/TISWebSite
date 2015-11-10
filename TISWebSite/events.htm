@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="Content/main.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/calendar.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom_1.css" />
+    
+    <script src="js/modernizr.custom.63321.js"></script>
+</head>
+<body>
+    <div style="position:fixed; width:100%; height:250px;" class="hidden-xs navGradient"></div>
+
+    <div class="container">
+       
+            <div class="custom-calendar-wrap custom-calendar-full" style="margin-top:100px">
+                <div class="custom-header clearfix" style="padding:25px; color:white; margin-top:0px; width:100%">
+                    <p style="float:left; margin-top:-20px; font-size:22pt;font-family: 'Droid Arabic Kufi';" class="hidden-xs">آخر الأحداث</p>
+                    <h3 class="custom-month-year" style="float:right; margin-top:-15px; font-size:14pt;">
+                        <span style="" id="custom-month" class="custom-month"></span>
+                        <span id="custom-year" class="custom-year"></span>
+
+                    </h3>
+                    <nav style="float:left; margin-top:-10px;">
+                        <span id="custom-prev" class="custom-prev"></span>
+                        <span id="custom-next" class="custom-next"></span>                        
+                    </nav>
+                </div>
+                <div id="calendar" class="fc-calendar-container"></div>
+            </div>
+        
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.calendario.js"></script>
+    <script type="text/javascript">
+			$(function() {
+
+				var cal = $( '#calendar' ).calendario();
+				$month = $( '#custom-month' ).html( cal.getMonthName() ),
+				$year = $( '#custom-year' ).html( cal.getYear() );
+
+				$( '#custom-next' ).on( 'click', function() {
+					cal.gotoNextMonth( updateMonthYear );
+				} );
+				$( '#custom-prev' ).on( 'click', function() {
+					cal.gotoPreviousMonth( updateMonthYear );
+				} );
+				$( '#custom-current' ).on( 'click', function() {
+					cal.gotoNow( updateMonthYear );
+				} );
+
+				function updateMonthYear() {
+					$month.html( cal.getMonthName() );
+					$year.html( cal.getYear() );
+				}
+
+				cal.setData( {
+						'03-01-2015' : '<a href="#">testing</a>',
+						'03-10-2015' : '<a href="#">testing</a>',
+						'10-12-2015' : '<div style="font-family: Droid Arabic Kufi; width:100%; direction:rtl; height:100%;color:white">Dreams are shaking set sirens wake up on a tired eyes.</div>'
+					} );
+				// you can also add more data later on. As an example:
+				/*
+				someElement.on( 'click', function() {
+
+					cal.setData( {
+						'03-01-2013' : '<a href="#">testing</a>',
+						'03-10-2013' : '<a href="#">testing</a>',
+						'03-12-2013' : '<a href="#">testing</a>'
+					} );
+					// goes to a specific month/year
+					cal.goto( 3, 2013, updateMonthYear );
+
+				} );
+				*/
+
+			});
+    </script>
+</body>
+</html>

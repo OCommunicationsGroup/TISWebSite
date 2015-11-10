@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/main.css" rel="stylesheet" />
+    <link href="Scripts/javascript.fullPage.css" rel="stylesheet" />
+    <link href="Content/animate.css" rel="stylesheet" />
+    <title>ALTARBYAH ALISLAMYAH</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//fast.eager.io/nVaLUtFx85.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="content/component.css" />
+    <script src="scripts/modernizr.custom.js"></script>
+
+    <script src="Scripts/greensock/TweenMax.min.js"></script>
+    <script src="Scripts/jquery.preload.js"></script>
+    <script src="Scripts/tis.js"></script>
+    <script src="Scripts/wow.min.js"></script>
+    <link href="Content/animsition.css" rel="stylesheet" />
+    <script src="Scripts/jquery.animsition.min.js"></script>
+    <script>
+        new WOW().init();
+
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+
+</head>
+<body style="background:#9ea2a6; min-height:100%; height:100%">
+    <div class="animsition">
+    <div style="position:fixed; width:100%; height:100%; z-index:9998; background:url('images/i5.png') top center no-repeat; background-size:cover; " class="wow fadeIn"></div>
+    <div style="position:fixed; width:100%; height:100%; z-index:9999; opacity:0.8" class="navGradient">
+
+
+        <div class="hidden-lg hidden-sm hidden-md" style="width:100%; background:rgba(0,0,0,0.5); color:white; min-height:100%; height:600px; padding:25px">            
+            <h3 style="margin-right:0px; font-size:14pt; margin-top:100px">التوظيف</h3>
+        </div>
+
+    </div>
+    
+        <div class="hidden-xs" style="position:fixed; width:50%; background-color:#268f56; color:white; background-image:url('images/pattern_new.png'); height:40%; bottom:0%; z-index:99999; padding:25px">
+            <h3 style="margin:0px; font-size:30pt; margin-right:170px;" class="hidden-xs">التوظيف</h3>
+            <h3 style="margin-right:0px; font-size:14pt;" class="hidden-lg hidden-md hidden-sm">التوظيف</h3>
+        </div>
+        
+    </div>
+
+    
+    <!--<div style="position:fixed; bottom:0; width:100%; min-height:50px; height:50px;z-index:99999; font-size:9pt; color:#dedede" class="">
+
+        <div style="padding:15px; padding-left:25px; padding-right:25px; height:90px; margin:0px; float:left;" class="navGradient">
+            <p class="wow fadeInRight" style="float:left;">مدارس التربية الإسلامية . حقوق النشر 2014 @ مدارس التربية الإسلامية . المملكة العربية السعودية</p>
+        </div>
+
+    </div>-->
+    <script>
+	  $(document).ready(function() {
+
+      $(".animsition").animsition({
+
+        inClass: 'zoom-in-sm',
+        outClass: 'zoom-out-sm',
+        inDuration            :    1500,
+        outDuration           :    800,
+        linkElement           :   '.animsition-link',
+        // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+        loading               :    true,
+        loadingParentElement  :   'body', //animsition wrapper element
+        loadingClass          :   'animsition-loading',
+        unSupportCss          : [ 'animation-duration',
+                                  '-webkit-animation-duration',
+                                  '-o-animation-duration'
+                                ],
+        //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        //The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+
+        overlay               :   true,
+
+        overlayClass          :   'animsition-overlay-slide',
+        overlayParentElement  :   'body'
+      });
+    });
+    </script>
+</body>
+</html>
