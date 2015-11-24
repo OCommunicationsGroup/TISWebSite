@@ -95,6 +95,7 @@
     <Content Include="Content\card.css" />
     <Content Include="Content\component.css" />
     <Content Include="Content\main.css" />
+    <Content Include="Content\orgchart.css" />
     <Content Include="Content\pattern.css" />
     <Content Include="css\calendar.css" />
     <Content Include="css\card-4.css" />
@@ -199,9 +200,13 @@
     <Content Include="images\lines.png" />
     <Content Include="images\location_pin.png" />
     <Content Include="images\logo.png" />
+    <Content Include="images\mp.png" />
     <Content Include="images\nctt.png" />
     <Content Include="images\outdoor.png" />
     <Content Include="images\pagedown.png" />
+    <Content Include="images\patt2.gif" />
+    <Content Include="images\patt3.gif" />
+    <Content Include="images\patt4.gif" />
     <Content Include="images\pattern.png" />
     <Content Include="images\pattern_new.png" />
     <Content Include="images\pattern_new_dark.png" />
@@ -230,6 +235,7 @@
     <Content Include="images\tree.png" />
     <Content Include="images\vtour.png" />
     <Content Include="images\white.jpg" />
+    <Content Include="images\yesIcon.gif" />
     <Content Include="img\preloader.gif" />
     <Content Include="js\Card-circle.js" />
     <Content Include="js\Card-polygon-4.js" />
@@ -313,6 +319,7 @@
     <Content Include="css\.DS_Store" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\StyleSheet1.scss" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />

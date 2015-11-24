@@ -289,5 +289,45 @@ div.panelz {
 .burberry{color:#fff; background:#34495e url(../images/box.png) no-repeat top left; height:600px;}
 .bluetooth{color:#fff; background:#2d64b5 url(../images/box.png) no-repeat top left; height:600px;}
 
+.Pink{color:#fff; background:#d26892 url(../images/box.png) no-repeat top left; height:650px;}
+
+#EducationalLevels ul li {
+font-size: 10pt!important;
+}
+/*#primary1 ul li {
+font-size: 10pt!important;
+}*/
+
+
+
+.EDuPlan tr th {
+    border:1px dotted #fff !important;
+    padding:5px!important;
+    text-align:center
+
+}
+
+.EDuPlan thead tr  td {
+     border:1px dotted #fff !important;
+    padding:5px!important;
+    text-align:center
+
+}
+
+.EDuPlan tbody tr  td {
+     border:1px dotted #fff !important;
+     padding:2px!important;
+     font-size:13px;
+
+}
+.EDuPlan tfoot tr  td {
+     border:1px dotted #fff !important;
+     padding:5px!important;
+      text-align:center
+}
+.InternationalSubject {
+    color:#b83668;
+}
+
 
 .topMargin{margin-top:1200px;}
